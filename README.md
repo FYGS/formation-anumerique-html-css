@@ -1,5 +1,7 @@
 # 🍽️ La Case Ronde - Site Web Restaurant
 
+> 🌐 [Voir le site en direct](https://fygs.github.io/formation-anumerique-html-css/)
+
 ## 📝 Description
 Site web moderne et élégant pour le restaurant gastronomique "La Case Ronde". Ce projet démontre l'utilisation des meilleures pratiques en développement web front-end, avec un focus sur l'expérience utilisateur et le design responsive.
 
