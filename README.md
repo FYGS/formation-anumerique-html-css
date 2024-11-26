@@ -86,6 +86,73 @@ la-case-ronde/
 - Titres : `Playfair Display`
 - Corps : `Poppins`
 
+## 🖼️ Ressources Statiques
+
+### 📸 Images
+- **Hero Section (Accueil)**: [Restaurant Interior](https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3)
+- **Menu Background**: [Food Plating](https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3)
+- **Contact Background**: [Restaurant Exterior](https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3)
+
+### 🔤 Polices Google Fonts
+- [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) - Pour les titres
+  ```css
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+  ```
+- [Poppins](https://fonts.google.com/specimen/Poppins) - Pour le texte
+  ```css
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  ```
+
+### 🎨 Palette de Couleurs
+```css
+:root {
+  --primary-color: #2c3e50;    /* Bleu foncé */
+  --accent-color: #e74c3c;     /* Rouge vif */
+  --text-color: #2c3e50;       /* Texte principal */
+  --light-bg: #f8f9fa;         /* Arrière-plan clair */
+  --white: #ffffff;            /* Blanc */
+}
+```
+
+### 🏷️ Étiquettes de Cuisine
+```css
+/* Afrique */
+background-color: #f39c12;     /* Orange */
+
+/* France */
+background-color: #3498db;     /* Bleu */
+
+/* Asie */
+background-color: #e74c3c;     /* Rouge */
+```
+
+### 🔄 Animations
+```css
+/* Transition globale */
+--transition: all 0.3s ease;
+
+/* Animation de fondu */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+```
+
+### 📱 Points de Rupture Responsive
+```css
+/* Mobile */
+@media (max-width: 768px) { ... }
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { ... }
+
+/* Desktop */
+@media (min-width: 1025px) { ... }
+```
+
+### 🛡️ Attributions
+Toutes les images sont sous licence [Unsplash](https://unsplash.com/license), libres d'utilisation pour des projets commerciaux et non-commerciaux.
+
 ## 🔧 Configuration Git
 
 ### 📥 Créer un nouveau repository
