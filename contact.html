@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - La Case Ronde</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <h1 class="logo">La Case Ronde</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <div class="contact-hero">
+        <h2>Contactez-nous</h2>
+        <p>Pour vos réservations et demandes spéciales</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-block">
+            <h3>Adresse</h3>
+            <p>123 Avenue Gastronomique<br />75000 Paris, France</p>
+          </div>
+          <div class="info-block">
+            <h3>Réservations</h3>
+            <p>
+              Tél: 01 23 45 67 89<br />
+              Email: contact@lacaseronde.fr
+            </p>
+          </div>
+          <div class="info-block">
+            <h3>Horaires</h3>
+            <p>Mardi - Samedi<br />19:00 - 23:00</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Nombre de convives</label>
+            <select id="guests" name="guests">
+              <option value="1">1 personne</option>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6+">6 personnes ou plus</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date souhaitée</label>
+            <input type="date" id="date" name="date" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+
+      <div class="map-container">
+        <div class="map-placeholder">
+          <!-- Emplacement pour intégrer une carte Google Maps -->
+          <div class="map-overlay">
+            <p>Carte interactive</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h4>La Case Ronde</h4>
+          <p>123 Avenue Gastronomique<br />75000 Paris</p>
+        </div>
+        <div class="footer-hours">
+          <h4>Horaires</h4>
+          <p>Mardi - Samedi<br />19:00 - 23:00</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Réservations</h4>
+          <p>
+            Tél: 01 23 45 67 89<br />
+            contactlacaseronde.fr
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 La Case Ronde. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>
