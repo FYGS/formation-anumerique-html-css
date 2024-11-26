@@ -84,6 +84,109 @@ la-case-ronde/
 - Titres : `Playfair Display`
 - Corps : `Poppins`
 
+## 🔧 Configuration Git
+
+### 📥 Créer un nouveau repository
+
+```bash
+# Initialiser le projet
+echo "# la-case-ronde-restaurant" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+
+# Lier au repository distant
+git remote add origin https://github.com/[VOTRE-USERNAME]/la-case-ronde-restaurant.git
+git push -u origin main
+```
+
+### 🔄 Pousser un repository existant
+
+```bash
+# Lier au repository distant
+git remote add origin https://github.com/[VOTRE-USERNAME]/la-case-ronde-restaurant.git
+git branch -M main
+git push -u origin main
+```
+
+### 📋 Commandes Git courantes
+
+```bash
+# Vérifier l'état des fichiers
+git status
+
+# Ajouter des fichiers au staging
+git add .                  # Tous les fichiers
+git add [nom-fichier]      # Fichier spécifique
+
+# Créer un commit
+git commit -m "message"
+
+# Pousser les changements
+git push origin main
+
+# Récupérer les changements
+git pull origin main
+
+# Voir l'historique des commits
+git log
+```
+
+### 🌿 Gestion des branches
+
+```bash
+# Créer une nouvelle branche
+git checkout -b feature/nouvelle-fonctionnalite
+
+# Changer de branche
+git checkout [nom-branche]
+
+# Lister les branches
+git branch
+
+# Fusionner une branche
+git merge [nom-branche]
+```
+
+### ⚙️ Configuration initiale
+
+```bash
+# Configurer l'identité
+git config --global user.name "Votre Nom"
+git config --global user.email "votre@email.com"
+
+# Vérifier la configuration
+git config --list
+```
+
+### 🔍 Fichiers à ignorer
+Créez un fichier `.gitignore` à la racine du projet :
+
+```plaintext
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de dépendances
+node_modules/
+vendor/
+
+# Fichiers de build
+dist/
+build/
+
+# Fichiers de configuration locaux
+.env
+.env.local
+```
+
 ## 💻 Installation
 1. Clonez le repository
 2. Ouvrez `index.html` dans votre navigateur
