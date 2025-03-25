@@ -51,7 +51,8 @@
           </div>
         </div>
 
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" id="reservationForm" action="#" method="POST" novalidate>
+          <div class="form-message" id="formMessage"></div>
           <div class="form-group">
             <label for="name">Nom complet</label>
             <input type="text" id="name" name="name" required />
@@ -89,8 +90,9 @@
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
 
-          <button type="submit" class="submit-button">
+          <button type="submit" class="submit-button" id="submitButton">
             Envoyer le message
+            <span class="spinner hidden"></span>
           </button>
         </form>
       </div>
@@ -127,5 +129,6 @@
         <p>&copy; 2024 La Case Ronde. Tous droits réservés.</p>
       </div>
     </footer>
+    <script src="js/formHandler.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-/* Variables globales */
+/* Variables globales pour une personnalisation facilitée */
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e74c3c;
@@ -10,7 +10,7 @@
     --transition: all 0.3s ease;
 }
 
-/* Reset et styles de base */
+/* Réinitialisation des styles par défaut */
 * {
     margin: 0;
     padding: 0;
@@ -474,6 +474,7 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
 }
 
+/* Styles de base pour le formulaire */
 .contact-form {
     padding: 2rem;
     background-color: var(--white);
@@ -482,6 +483,7 @@ h1, h2, h3, h4 {
 }
 
 .form-group {
+    position: relative;
     margin-bottom: 1.5rem;
 }
 
@@ -504,12 +506,56 @@ h1, h2, h3, h4 {
     transition: var(--transition);
 }
 
+/* Style des champs en erreur */
+input.error, textarea.error, select.error {
+    /* Bordure et fond rouges pour les champs invalides */
+    border-color: #dc3545;
+    background-color: #fff8f8;
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
     box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.1);
+}
+
+/* Styles des messages d'erreur */
+.error-message {
+    /* Message d'erreur en rouge sous le champ */
+    color: #dc3545;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+/* Messages de retour utilisateur */
+.form-message {
+    /* Style de base pour tous les messages */
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+/* Message de succès */
+.form-message.success {
+    /* Fond vert pour les succès */
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Message d'erreur */
+.form-message.error {
+    /* Fond rouge pour les erreurs */
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
 }
 
 .submit-button {
@@ -531,6 +577,62 @@ h1, h2, h3, h4 {
     background-color: #c0392b;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+.submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form-message {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Animation de chargement */
+.spinner {
+    /* Indicateur de chargement rotatif */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.spinner.hidden {
+    display: none;
+}
+
+/* Animation de rotation */
+@keyframes spin {
+    /* Animation pour l'indicateur de chargement */
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 .map-container {
